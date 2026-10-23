@@ -18,7 +18,7 @@
 </head>
 <body class="bg-[#F9FAFB] text-gray-900 antialiased selection:bg-emerald-600 selection:text-white">
 
-    <!-- شريط الإعلان العلوي بنمط YouCan البسيط -->
+    <!-- شريط الإعلان العلوي -->
     <div class="bg-gray-900 text-gray-200 text-xs sm:text-sm py-2.5 text-center font-medium px-4">
         🔒 أرشفة تراكمية دائمة لمحادثات واتساب محلياً لحماية مبيعاتك وعملائك
     </div>
@@ -47,8 +47,8 @@
         </div>
     </nav>
 
-    <!-- الواجهة الترويجية (Hero Section) -->
-    <section class="max-w-4xl mx-auto px-4 pt-16 pb-20 text-center">
+    <!-- الواجهة الترويجية (Hero Section) مع قسم الفيديو -->
+    <section class="max-w-4xl mx-auto px-4 pt-16 pb-16 text-center">
         <div class="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-150 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-bold mb-6">
             <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
             الحل الأمثل لإدارة وأرشفة رسائل الزبائن محلياً
@@ -59,9 +59,33 @@
             <span class="text-emerald-600">بدون قلق من فقدان البيانات</span>
         </h1>
         
-        <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto font-normal leading-relaxed mb-10">
+        <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto font-normal leading-relaxed mb-8">
             تطبيق سريع وسهل يتيح لك فك وقراءة قواعد بيانات واتساب للأعمال محلياً، مع ميزة الحفظ التراكمي لضمان بقاء سجلاتك التجارية في أمان تام.
         </p>
+
+        <!-- مكان الفيديو التوضيحي -->
+        <div class="w-full max-w-3xl mx-auto mb-10">
+            <div class="relative bg-white border border-gray-200 rounded-3xl p-2 sm:p-3 shadow-xl shadow-gray-200/60 overflow-hidden">
+                <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-gray-900 flex items-center justify-center group">
+                    <!-- خيار 1: كود تضمين iframe (يوتيوب أو فيميو) -->
+                    <!-- 
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="شرح ClientBox" frameborder="0" allowfullscreen></iframe> 
+                    -->
+                    
+                    <!-- واجهة المعاينة الافتراضية قبل التشغيل (Placeholder) -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent z-10 pointer-events-none"></div>
+                    <div class="relative z-20 flex flex-col items-center gap-3">
+                        <button type="button" class="w-16 h-16 sm:w-20 sm:h-20 bg-emerald-600/90 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-lg shadow-emerald-600/40 hover:scale-105 transition-all">
+                            <!-- Play Icon -->
+                            <svg class="w-7 h-7 sm:w-8 sm:h-8 fill-current translate-x-[-2px]" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <span class="text-white text-xs sm:text-sm font-bold tracking-wide drop-shadow">شاهد كيف يعمل التطبيق في دقيقة واحدة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="#pricing" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-8 py-3.5 rounded-xl shadow-sm hover:shadow-md transition-all">
@@ -73,7 +97,7 @@
         </div>
     </section>
 
-    <!-- المميزات (Features) على طراز بطاقات YouCan النظيفة -->
+    <!-- المميزات (Features) -->
     <section id="features" class="max-w-6xl mx-auto px-4 py-16">
         <div class="text-center max-w-2xl mx-auto mb-14">
             <h2 class="text-3xl font-extrabold text-gray-900 mb-3">مصمم خصيصاً لتلبية احتياجات التجار</h2>
@@ -81,7 +105,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- ميزة 1 -->
             <div class="bg-white border border-gray-200/80 rounded-2xl p-7 shadow-sm hover:border-emerald-500/50 hover:shadow-md transition-all">
                 <div class="w-12 h-12 bg-emerald-50 border border-emerald-100 rounded-xl flex items-center justify-center text-xl mb-5 text-emerald-600">
                     📂
@@ -92,7 +115,6 @@
                 </p>
             </div>
 
-            <!-- ميزة 2 -->
             <div class="bg-white border border-gray-200/80 rounded-2xl p-7 shadow-sm hover:border-emerald-500/50 hover:shadow-md transition-all">
                 <div class="w-12 h-12 bg-emerald-50 border border-emerald-100 rounded-xl flex items-center justify-center text-xl mb-5 text-emerald-600">
                     🛡️
@@ -103,7 +125,6 @@
                 </p>
             </div>
 
-            <!-- ميزة 3 -->
             <div class="bg-white border border-gray-200/80 rounded-2xl p-7 shadow-sm hover:border-emerald-500/50 hover:shadow-md transition-all">
                 <div class="w-12 h-12 bg-emerald-50 border border-emerald-100 rounded-xl flex items-center justify-center text-xl mb-5 text-emerald-600">
                     ⚡
@@ -116,7 +137,7 @@
         </div>
     </section>
 
-    <!-- خطة الأسعار واستمارة الشراء بأسلوب مبسط وعصري -->
+    <!-- خطة الأسعار واستمارة الشراء -->
     <section id="pricing" class="max-w-2xl mx-auto px-4 py-16">
         <div class="bg-white border border-gray-200 rounded-2xl p-8 sm:p-10 shadow-lg shadow-gray-200/50 relative">
             <div class="text-center mb-8">
@@ -130,7 +151,6 @@
                 </div>
             </div>
 
-            <!-- قائمة المزايا -->
             <div class="space-y-3.5 border-t border-b border-gray-100 py-6 mb-8 text-sm font-medium text-gray-700">
                 <div class="flex items-center gap-3">
                     <span class="text-emerald-600 font-bold text-base">✓</span>
