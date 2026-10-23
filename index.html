@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClientBox | صندوق الطوارئ للتاجر</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- خط تجوال / كايرو للعربية -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- شريط التنبيه العلوي -->
+    <div class="bg-emerald-900 text-emerald-100 text-xs py-2 text-center font-medium px-4">
+        🔒 احمِ محادثاتك وسجلات عملائك التجارية محلياً بنسبة 100% دون خوف من فقدان البيانات
+    </div>
+
+    <!-- ترويسة الصفحة -->
+    <header class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-2xl bg-emerald-600 flex items-center justify-center text-white shadow-md shadow-emerald-600/30 font-black text-xl">
+                C
+            </div>
+            <div>
+                <span class="text-xl font-black text-gray-900 tracking-tight">ClientBox</span>
+                <span class="block text-xs font-semibold text-emerald-600">صندوق الطوارئ للتاجر</span>
+            </div>
+        </div>
+        <a href="#pricing" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-5 py-2.5 rounded-xl transition-all shadow-sm text-sm">
+            احصل على نسختك
+        </a>
+    </header>
+
+    <!-- الواجهة الترويجية الرئيسية (Hero Section) -->
+    <section class="max-w-4xl mx-auto px-4 pt-12 pb-16 text-center">
+        <div class="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 px-3.5 py-1.5 rounded-full text-xs font-semibold mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            أداة الأرشفة التراكمية لواتساب الأعمال
+        </div>
+        <h1 class="text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6">
+            لا تفقد أي عميل أو محادثة مجدداً مع <span class="text-emerald-600">ClientBox</span>
+        </h1>
+        <p class="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
+            تطبيقك الموثوق لقراءة وأرشفة قواعد بيانات محادثات واتساب محلياً. حفظ تراكمي دائم يحميك من الحذف المفاجئ أو فقدان بيانات الصفقات والعملاء.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#pricing" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-8 py-4 rounded-2xl shadow-lg shadow-emerald-600/25 transition-all">
+                امتلك التطبيق الآن بخصم محدود
+            </a>
+            <a href="#features" class="w-full sm:w-auto bg-white hover:bg-gray-100 text-gray-700 font-bold text-base px-8 py-4 rounded-2xl border border-gray-200 transition-all">
+                تعرف على الميزات
+            </a>
+        </div>
+    </section>
+
+    <!-- مميزات التطبيق -->
+    <section id="features" class="max-w-5xl mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2">لماذا يحتاج كل تاجر إلى ClientBox؟</h2>
+            <p class="text-sm text-gray-500">حل عملي ومصمم خصيصاً للتجار ومسؤولي المبيعات عبر واتساب</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- كارت 1 -->
+            <div class="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                    📦
+                </div>
+                <h3 class="text-base font-bold text-gray-900 mb-2">حفظ تراكمي دائم</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    لا يتم حذف أي رسائل قديمة عند تحديث المحادثات، بل تظل السجلات محفوظة ومؤرشفة محلياً حتى لو حُذفت من التطبيق الأصلي.
+                </p>
+            </div>
+
+            <!-- كارت 2 -->
+            <div class="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                    🔐
+                </div>
+                <h3 class="text-base font-bold text-gray-900 mb-2">خصوصية تامة 100%</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    بياناتك لا ترفع على أي سيرفر خارجي، التطبيق يفك التشفير ويعالج البيانات محلياً على جهازك بواسطة مفتاح الأمان المباشر.
+                </p>
+            </div>
+
+            <!-- كارت 3 -->
+            <div class="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                    ⚡
+                </div>
+                <h3 class="text-base font-bold text-gray-900 mb-2">سرعة وسهولة في الربط</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    خيارات متعددة للربط: سواء عبر ربط مجلد واتساب التلقائي، أو التحديد اليدوي لملفات النسخ الاحتياطي (msgstore).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- خطة الأسعار والطلب (Pricing Section) -->
+    <section id="pricing" class="max-w-xl mx-auto px-4 py-16">
+        <div class="bg-white border-2 border-emerald-500 rounded-3xl p-8 shadow-xl relative overflow-hidden">
+            <div class="absolute top-0 left-0 bg-emerald-600 text-white text-xs font-bold py-1 px-4 rounded-br-xl">
+                عرض الإطلاق
+            </div>
+
+            <div class="text-center mb-6">
+                <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full uppercase">ترخيص دائم مدى الحياة</span>
+                <h3 class="text-2xl font-black text-gray-900 mt-3">حزمة التاجر الكاملة</h3>
+                <div class="flex items-center justify-center gap-2 mt-4">
+                    <span class="text-4xl font-extrabold text-gray-900">199</span>
+                    <span class="text-gray-500 text-sm font-semibold">درهم / لمرة واحدة</span>
+                </div>
+            </div>
+
+            <ul class="space-y-3.5 mb-8 text-sm text-gray-700">
+                <li class="flex items-center gap-2.5">
+                    <span class="text-emerald-500 font-bold">✓</span>
+                    <span>ترخيص مفتوح لاستخدام التطبيق دون اشتراكات شهرية</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                    <span class="text-emerald-500 font-bold">✓</span>
+                    <span>دعم كامل لفك وتصفح قواعد البيانات المشفرة</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                    <span class="text-emerald-500 font-bold">✓</span>
+                    <span>دليل تشغيل وإعداد خطوة بخطوة</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                    <span class="text-emerald-500 font-bold">✓</span>
+                    <span>تحديثات مستمرة لأي تغيير في هياكل واتساب</span>
+                </li>
+            </ul>
+
+            <!-- نموذج طلب أو زر الشراء -->
+            <form class="space-y-3">
+                <input type="text" placeholder="الاسم الكامل" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-emerald-500">
+                <input type="tel" placeholder="رقم الهاتف (واتساب)" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-emerald-500">
+                
+                <button type="button" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-emerald-600/30 transition-all text-sm mt-2">
+                    تأكيد الطلب والحصول على التطبيق الآن
+                </button>
+            </form>
+            <p class="text-center text-xs text-gray-400 mt-3">يتم التواصل معك عبر الواتساب فور إرسال الطلب لتسليم الملفات.</p>
+        </div>
+    </section>
+
+    <!-- التذييل (Footer) -->
+    <footer class="border-t border-gray-200 py-6 text-center text-xs text-gray-500">
+        <p>جميع الحقوق محفوظة © 2026 - ClientBox | صندوق الطوارئ للتاجر</p>
+    </footer>
+
+</body>
+</html>
