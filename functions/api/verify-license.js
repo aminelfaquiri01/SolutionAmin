@@ -1,3 +1,13 @@
+// يسمح لك بفتح الرابط من المتصفح مباشرة للتأكد من أن الـ API تعمل بنجاح
+export async function onRequestGet() {
+  return new Response(JSON.stringify({
+    success: true,
+    message: "Cloudflare Functions API تعمل بنجاح!"
+  }), {
+    headers: { 'Content-Type': 'application/json; charset=utf-8' }
+  });
+}
+
 export async function onRequestPost(context) {
   try {
     const { request, env } = context;
@@ -11,7 +21,8 @@ export async function onRequestPost(context) {
       });
     }
 
-    const cleanCode = code.trim().toUpperCase();
+    // نحذف toUpperCase() حتى يطابق الكود المسجل في KV تماماً
+    const cleanCode = code.trim();
 
     // 1. البحث عن الكود داخل قاعدة بيانات KV
     const licenseRaw = await env.LICENSES.get(cleanCode);
@@ -37,8 +48,7 @@ export async function onRequestPost(context) {
       return new Response(JSON.stringify({
         success: true,
         message: 'تم تفعيل الكود بنجاح وربطه بجهازك.',
-        // ضع هنا رابط تحميل ملف الـ APK المباشر (مثل رابط من Cloudflare R2 أو Google Drive)
-        downloadUrl: 'YOUR_DIRECT_APK_DOWNLOAD_LINK'
+        downloadUrl: 'https://youtu.be/aWrwj8QXTXE?si=W0MJXF2n-1rj-PkN'
       }), {
         headers: { 'Content-Type': 'application/json' }
       });
@@ -49,7 +59,7 @@ export async function onRequestPost(context) {
       return new Response(JSON.stringify({
         success: true,
         message: 'تم التحقق من الترخيص الخاص بجهازك.',
-        downloadUrl: 'YOUR_DIRECT_APK_DOWNLOAD_LINK'
+        downloadUrl: 'https://youtu.be/aWrwj8QXTXE?si=W0MJXF2n-1rj-PkN'
       }), {
         headers: { 'Content-Type': 'application/json' }
       });
