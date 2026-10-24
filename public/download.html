@@ -73,10 +73,14 @@
       </div>
 
       <!-- شاشة التنزيل بعد التأكيد -->
+      <!-- شاشة التنزيل بعد التأكيد -->
       <div id="downloadScreen" class="hidden text-center space-y-5">
-        <div class="w-14 h-14 bg-emerald-100 text-brand rounded-2xl flex items-center justify-center mx-auto text-2xl font-bold">
-          ✓
+        
+        <!-- صورة التطبيق logo.svg مكان علامة الصح الخضراء -->
+        <div class="w-16 h-16 bg-white border border-gray-200 rounded-2xl flex items-center justify-center mx-auto shadow-sm p-2 overflow-hidden">
+          <img src="logo.svg" alt="ClientBox Logo" class="w-full h-full object-contain">
         </div>
+
         <div>
           <span class="inline-block text-[11px] font-bold text-brand bg-emerald-50 border border-emerald-150 px-3 py-0.5 rounded-full mb-1">
             تم تفعيل وتثبيت الترخيص على هذا الجهاز
@@ -89,6 +93,7 @@
           <a 
             id="apkDownloadBtn" 
             href="#" 
+            target="_blank"
             class="w-full bg-brand hover-bg-brand text-white font-bold py-3.5 px-4 rounded-xl text-sm transition-all shadow-md flex items-center justify-center gap-2"
           >
             <span>📥</span>
