@@ -118,7 +118,7 @@
 
     async function handleVerification(event) {
       event.preventDefault();
-      const codeInput = document.getElementById("accessCode").value.trim().toUpperCase();
+      const codeInput = document.getElementById("accessCode").value.trim();
       const errorMsg = document.getElementById("errorMsg");
       const submitBtn = document.getElementById("submitBtn");
       const lockScreen = document.getElementById("lockScreen");
